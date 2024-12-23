@@ -94,7 +94,7 @@ public class EmiStackList {
 						EmiLog.error(e);
 					}
 				};
-				var itemGroups = ItemGroups.getGroups();
+				List<ItemGroup> itemGroups = ItemGroups.getGroups();
 				// Category item groups must be updated before non-category ones, otherwise the search group will
 				// read outdated item lists
 				itemGroups.stream().filter(g -> g.getType() == ItemGroup.Type.CATEGORY).forEach(itemGroupConsumer);
