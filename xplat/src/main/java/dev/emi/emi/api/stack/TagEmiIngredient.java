@@ -130,7 +130,7 @@ public class TagEmiIngredient implements EmiIngredient {
 					.invokeRenderBakedItemModel(model,
 						ItemStack.EMPTY, LightmapTextureManager.MAX_LIGHT_COORDINATE, OverlayTexture.DEFAULT_UV, context.matrices(), 
 						ItemRenderer.getDirectItemGlintConsumer(immediate,
-							TexturedRenderLayers.getItemEntityTranslucentCull(), true, false));
+							TexturedRenderLayers.getEntityTranslucentCull(), true, false));
 				immediate.draw();
 				
 				if (!model.isSideLit()) {
